@@ -27,7 +27,8 @@ javascript_import do
   JS
 end
 
-copy_file "#{__dir__}/turbo_transitions.js", "frontend/javascript/turbo_transitions.js"
+copy_file "https://raw.githubusercontent.com/bridgetownrb/turbo-stimulus-automation/refs/heads/main/turbo_transitions.js",
+          "frontend/javascript/turbo_transitions.js"
 
 say_status :turbo, "Turbo successfully added!", :magenta
 say_status :turbo, "For declarative shadow DOM support, you will need to update", :blue
